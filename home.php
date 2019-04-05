@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--home.php, the main page and file for our program. Creates the DOM for rateMyClasses -->
+<!--home.php, the main php page and file for our program. Creates the DOM for rateMyClasses -->
 <html>
     <!--Main header div. Should be displayed at the top of the page.-->
     <h1> Rate My Class </h1>
