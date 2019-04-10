@@ -1,14 +1,22 @@
 <html>
-    <!--project.html, the html file that handles the rest of the project. Serves as a login page -->
-    <h1> CS 498 Project </h1>
-    <div>
-        <form action="/home.php" method="get">
-            <a> username: </a>
-            <input type="text" id="username" name="username">
+    <head> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:400,900" rel="stylesheet">
+    </head>
+    <div class="leftContainer"> 
+        <img class="backgroundImage" src="backgroundImage.svg">
+    </div>
+    <div class="rightContainer">
+        <h1 class="pageTitle"> RateMyCourse </h1>
+        <br><br><br><br>
+        
+        <form class="form" action="/home.php" method="get">
+            <h4 class="greetingLabel"> Welcome back to RateMyCourse </h4>
+            <input class="textField" type="text" id="username" placeholder="username">
             <br> <br> 
-            <a> password: </a> 
-            <input type="text" id="password" name="password">
-            <input type="submit" id="submit" name="submit">
+            <input class="textField" type="password" id="password" placeholder="password">
+            <br> <br> <br>    
+            <input class="loginButton" type="submit" id="submit" name="submit" value="Login">
         </form>
     </div>
 </html>
