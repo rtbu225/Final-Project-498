@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<!--home.php, the main php page and file for our program. Creates the DOM for rateMyClasses -->
 <html>
-    <!--Main header div. Should be displayed at the top of the page.-->
-    <h1> Rate My Class </h1>
-    <br> <br> <br> <br>
-    <h3> Submit Review </h3>
-    <!--Submit review div. Is linked to submit_review.php. Handles the logic for writing and submitting a review for a class. -->
-    <div id="submit_review" name="submit_review">
-        <form action='submit_review.php' method="get">
-            <a> class: </a>
-            <input type="text" id="class" name="class">
-            <br>
-            <a> department: <a>
-            <input type="text" id="department" name="department">
-            <br>
-            <a> review: </a>
-            <input type="text" id="review" name="review">
-            <input type="submit" id="submit">
-        </form>
-    </div>
+<head> 
+        <link href="homeStyle.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:400,900" rel="stylesheet">
+    </head>
 
-    <br> <br> <br> <br>
-
-    <h3> Search Reviews for Specific Class </h3>
-    <!-- search reviews div. Handles the logic for searching for a specific class' reviews. Linked to fetch_classes.php -->
-    <div id="search_reviews" name="search_reviews">
+ <body>
+ 
+  <h1 id = 'h1'> RateMyCourse </h1>
+  <br> <br>
+ <h3 id = 'search'> Search Reviews for Specific Class </h3>
+   <div id="search_reviews" name="search_reviews">
+      
         <form action="fetch_classes.php" method="get">
-            <a> department name: </a>
-            <input type="text" id="department_name" name="department_name">
-            <input type="submit" id="department_submit" name="department_submit">
+      
+            <input type="text" id="department_name" name="department_name" placeholder="Enter Department Name" class = "inputbox">
+            <input type="submit" id="submit2" name="department_submit" class = "submit">
         </form>
     </div>
+
+  <br> <br> <br> 
+  <h3 id = 'h3'> Submit A Review: </h3>
+  
+    <div id="submit_review" name="submit_review">
+
+        <form action='submit_review.php' method="get">
+           <br> <br>  <br>  <br> 
+            <a> Enter Information Below: </a>
+            <br>
+            <input type="text" id="class" name="class" placeholder = "Enter Course Name and Number" class = "inputbox">
+      
+            <input type="text" id="department" name="department" placeholder = "Department Name" class = "inputbox"  >
+      
+            <input type="text" id="professor" name="professor" placeholder = "Instructor's Name" class = "inputbox">
+    
+            <input type="text" id="review" name="review" placeholder = "Rate Course from 1-5" class = "inputbox">
+              <br>
+            <input type="submit" id="submit" class="submit">
+        </form>
+    </div>
+
+
+
+  </body>
 </html>
