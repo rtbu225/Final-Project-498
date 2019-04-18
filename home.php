@@ -1,6 +1,9 @@
+<!--home.php. Is the main for this project -->
+
 <!DOCTYPE html>
 <html>
 <head> 
+        <!-- style things -->
         <link href="homeStyle.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:400,900" rel="stylesheet">
     </head>
@@ -10,6 +13,7 @@
   <h1 id = 'h1'> RateMyCourse </h1>
   <br> <br>
  <h3 id = 'search'> Search Reviews for Specific Class </h3>
+   <!-- Handles the logic for searching reviews-->
    <div id="search_reviews" name="search_reviews">
       
         <form action="fetch_classes.php" method="get">
@@ -20,6 +24,7 @@
     </div>
 
   <br> <br> <br> 
+   <!-- Handles the logic for submitting a review -->
   <h3 id = 'h3'> Submit A Review: </h3>
   
     <div id="submit_review" name="submit_review">
